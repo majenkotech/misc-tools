@@ -166,6 +166,7 @@ int main(int argc, char **argv)
     FILE *file = fopen(filename, "w");
     gdImagePng(img, file);
     fclose(file);
+    printf("Saved to %s\n", filename);
 
 	libusb_exit(NULL);
 	return 0;
